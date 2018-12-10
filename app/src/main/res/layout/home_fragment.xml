@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jetpo.smartmealplanner.HomeFragment">
+
+    <TextView
+        android:id="@+id/mealTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:text="Meals for Today"
+        android:textSize="18sp" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="116dp">
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="16dp"
+        android:text="Ingredients to buy"
+        android:textSize="18sp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="116dp">
+
+
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="16dp"
+        android:text="Ingredients going off"
+        android:textSize="18sp" />
+    
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="116dp"></ListView>
+
+
+</LinearLayout>
