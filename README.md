@@ -9,6 +9,7 @@ Smart Meal Planner, helping you plan your meals and waste less food.
     - Helps prevent buying unnecessary ingredients, therefore saving money.
 - Show users an overview of their meals for the week.
 
+[Smart Meal Planner Ideas](https://sites.google.com/view/willrussell/projects/smart-meal-planner "Smart Meal Planner")
 
 ## Idea
 
@@ -19,3 +20,4 @@ We won Best Newie Hack!
 ## Development
 
 Requires Android 5.0 or higher (API level 21 or higher).
+
