@@ -5,24 +5,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.jetpo.smartmealplanner.InventoryFragment"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/layout">
 
 
-    <ListView
-        android:id="@+id/inventory_listview"
-        android:layout_width="wrap_content"
-        android:layout_height="480dp"
-        android:divider="@null"
-        android:dividerHeight="0dp">
-
-    </ListView>
-
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         style="@style/Widget.MaterialComponents.FloatingActionButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_add_white_24dp" />
+        android:src="@drawable/ic_add_white_24dp"
+        app:layout_anchor="@id/layout"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"/>
 </LinearLayout>

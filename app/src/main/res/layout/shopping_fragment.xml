@@ -12,7 +12,7 @@
         android:dividerHeight="0dp">
     </ListView>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         style="@style/Widget.MaterialComponents.FloatingActionButton"
         android:layout_width="match_parent"

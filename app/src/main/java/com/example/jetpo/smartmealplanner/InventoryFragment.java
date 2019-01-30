@@ -3,13 +3,11 @@ package com.example.jetpo.smartmealplanner;
 import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.design.widget.FloatingActionButton;
-import java.util.ArrayList;
-import java.util.List;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import android.widget.ListView;
 
@@ -30,7 +28,7 @@ public class InventoryFragment extends Fragment{
         ListView listview = (ListView) view.findViewById(R.id.inventory_listview);
         listview.setAdapter(adapter);
 
-        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +38,7 @@ public class InventoryFragment extends Fragment{
 
             }
         });
-
+*/
         return view;
     }
 }
