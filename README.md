@@ -9,7 +9,7 @@ Smart Meal Planner, helping you plan your meals and waste less food.
     - Helps prevent buying unnecessary ingredients, therefore saving money.
 - Show users an overview of their meals for the week.
 
-[Smart Meal Planner Ideas](https://sites.google.com/view/willrussell/projects/smart-meal-planner "Smart Meal Planner")
+[Smart Meal Planner Ideas](https://www.will-russell.com/projects/smart-meal-planner "Smart Meal Planner")
 
 ## Idea
 
