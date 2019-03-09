@@ -49,7 +49,7 @@ public class AddMeal extends AppCompatActivity {
     }
 
     public void showDatePickerDialog(View v) {
-        DialogFragment newFragment = new AddIngredient.DatePickerFragment();
+        DialogFragment newFragment = new AddMeal.DatePickerFragment();
         newFragment.show(getSupportFragmentManager(), "datePicker");
 
     }
