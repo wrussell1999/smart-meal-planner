@@ -17,9 +17,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:inputType="textPersonName"
-        android:hint="@string/food_name">
+        android:hint="@string/food_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/colorAccent">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/food_nameBox"
             android:layout_width="match_parent"
@@ -37,7 +38,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/food_layout"
         android:hint="Quantity"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/colorAccent">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/quantityBox"
             android:layout_width="match_parent"
