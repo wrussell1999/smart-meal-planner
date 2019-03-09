@@ -3,22 +3,22 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/RobotoRegular" />
+        android:font="@font/robotoregular" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/RobotoBlack" />
+        android:font="@font/robotoblack" />
 
     <font
         android:fontStyle="italic"
         android:fontWeight="400"
-        android:font="@font/RobotoItalic" />
+        android:font="@font/robotoitalic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/RobotoThin" />
+        android:font="@font/robotothin" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/RobotoLight" />
+        android:font="@font/robotolight" />
 </font-family>
