@@ -1,4 +1,4 @@
-package com.example.jetpo.smartmealplanner;
+package smartmealplanner.example.jetpo.smartmealplanner;
 
 import org.junit.Test;
 

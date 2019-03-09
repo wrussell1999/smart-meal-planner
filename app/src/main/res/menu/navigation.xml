@@ -8,7 +8,7 @@
 
     <item
         android:id="@+id/navigation_shopping_list"
-        android:icon="@drawable/ic_assignment_black_24dp"
+        android:icon="@drawable/shopping_black_icon"
         android:title="@string/title_shopping_list" />
 
     <item
@@ -17,7 +17,7 @@
         android:title="@string/title_inventory" />
     <item
         android:id="@+id/navigation_week_overview"
-        android:icon="@drawable/ic_view_week_black_24dp"
-        android:title="@string/title_week_overview" />
+        android:icon="@drawable/meal_black_icon"
+        android:title="@string/title_meals" />
 
 </menu>
