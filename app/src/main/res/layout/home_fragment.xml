@@ -18,21 +18,60 @@
         android:minHeight="100dp"
         android:padding="8dp"
         android:paddingTop="8dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="2dp">
-        <TextView
-            android:id="@+id/mealTitle"
+        android:layout_weight="0.3"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/open_sans"
-            android:paddingLeft="8dp"
-            android:paddingTop="8dp"
-            android:text="Meals for Today"
-            android:textSize="16sp" />
-        <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="116dp">
-        </ListView>
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mealTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="Meals for Today"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/headTextColor"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/mealTitle"
+                android:padding="8dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="Breakfast"
+                    android:textColor="@color/subTextColor"
+                    android:textSize="14dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="Lunch"
+                    android:textColor="@color/subTextColor"
+                    android:textSize="14dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="Dinner"
+                    android:textColor="@color/subTextColor"
+                    android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+        </RelativeLayout>
     </com.google.android.material.card.MaterialCardView>
 
 
@@ -46,18 +85,18 @@
         android:layout_marginBottom="@dimen/mtrl_card_spacing"
         android:minHeight="100dp"
         android:padding="8dp"
-        android:paddingTop="8dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="2dp">
+        android:layout_weight="0.3"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="1dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/open_sans"
             android:paddingLeft="8dp"
             android:paddingTop="8dp"
             android:paddingRight="8dp"
             android:text="Shopping List"
-            android:textSize="16sp" />
+            android:textSize="24dp"
+            android:textColor="@color/headTextColor"/>
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="116dp">
@@ -74,18 +113,19 @@
         android:layout_marginBottom="@dimen/mtrl_card_spacing"
         android:minHeight="100dp"
         android:padding="8dp"
-        android:paddingTop="8dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="2dp">
+        android:paddingBottom="8dp"
+        app:cardCornerRadius="4dp"
+        android:layout_weight="0.3"
+        app:cardElevation="1dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/open_sans"
             android:paddingLeft="8dp"
             android:paddingTop="8dp"
             android:paddingRight="8dp"
             android:text="Ingredients going off"
-            android:textSize="16sp" />
+            android:textSize="24dp"
+            android:textColor="@color/headTextColor"/>
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="116dp">

@@ -6,4 +6,7 @@
     <color name="textboxBackground">#f1f3f4</color>
     <color name="textboxBorder">#babdbe</color>
 
+
+    <color name="headTextColor">#202020</color>
+    <color name="subTextColor">#656565</color>
 </resources>
