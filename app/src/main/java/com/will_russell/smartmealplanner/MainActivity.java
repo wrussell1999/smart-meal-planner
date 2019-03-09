@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.navigation_week_overview:
                     getSupportActionBar().setTitle(R.string.title_meals);
-                    selectedFragment = WeekFragment.newInstance();
+                    selectedFragment = MealsFragment.newInstance();
                     break;
                 }
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
