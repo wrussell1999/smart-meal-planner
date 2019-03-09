@@ -1,4 +1,4 @@
-package com.example.jetpo.smartmealplanner;
+package com.will_russell.smartmealplanner;
 import java.util.ArrayList;
 
 import android.app.Activity;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
 
 
 public class InventoryArrayAdapter extends ArrayAdapter<Ingredient> {

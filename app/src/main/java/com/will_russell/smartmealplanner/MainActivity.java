@@ -1,7 +1,8 @@
-package com.example.jetpo.smartmealplanner;
+package com.will_russell.smartmealplanner;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = ShoppingFragment.newInstance();
                     break;
                 case R.id.navigation_week_overview:
-                    getSupportActionBar().setTitle(R.string.title_week_overview);
+                    getSupportActionBar().setTitle(R.string.title_meals);
                     selectedFragment = WeekFragment.newInstance();
                     break;
                 }

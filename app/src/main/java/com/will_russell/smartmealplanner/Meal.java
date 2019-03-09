@@ -1,4 +1,4 @@
-package com.example.jetpo.smartmealplanner;
+package com.will_russell.smartmealplanner;
 import java.util.ArrayList;
 
 
