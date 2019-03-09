@@ -18,7 +18,7 @@ public class WeekFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.week_fragment, container, false);
+        return inflater.inflate(R.layout.meals_fragment, container, false);
     }
 
 }

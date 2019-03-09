@@ -25,21 +25,28 @@ public class AddIngredient extends AppCompatActivity {
         setContentView(R.layout.activity_add_ingredient);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        this.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        this.getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_white);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.out.println("Test");
-                EditText foodName_box = (EditText)findViewById(R.id.food_nameBox);
-                EditText quantity_Box= (EditText)findViewById(R.id.quantityBox);
-                EditText expiry_Box = (EditText)findViewById(R.id.expiryBox);
+                EditText foodName_box = (EditText) findViewById(R.id.food_nameBox);
+                EditText quantity_Box= (EditText) findViewById(R.id.quantityBox);
                 ingredients.add(new Ingredient(foodName_box.getText().toString()));
-                ingredients.get(ingredients.size()-1).addInventory(expiry_Box.getText().toString(),Integer.parseInt(quantity_Box.getText().toString()));
                 finish();
             }
         });
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish(); // close this activity as oppose to navigating up
+        return false;
+    }
+
 
 
     public static class DatePickerFragment extends DialogFragment
@@ -60,6 +67,12 @@ public class AddIngredient extends AppCompatActivity {
         public void onDateSet(DatePicker view, int year, int month, int day) {
             // Do something with the date chosen by the user
         }
+    }
+
+    public void showDatePickerDialog(View v) {
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getSupportFragmentManager(), "datePicker");
+
     }
 
 }

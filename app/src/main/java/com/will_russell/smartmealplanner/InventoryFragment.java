@@ -1,14 +1,16 @@
 package com.will_russell.smartmealplanner;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.content.Intent;
 
 import android.widget.ListView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class InventoryFragment extends Fragment{
 
@@ -24,10 +26,10 @@ public class InventoryFragment extends Fragment{
         View view = inflater.inflate(R.layout.inventory_fragment, container, false);
 
         InventoryArrayAdapter adapter = new InventoryArrayAdapter(getActivity(), Ingredient.ingredients);
-        //ListView listview = (ListView) view.findViewById(R.id.inventory_listview);
-        //listview.setAdapter(adapter);
+        ListView listview = (ListView) view.findViewById(R.id.inventory_listview);
+        listview.setAdapter(adapter);
 
-        /*FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +39,7 @@ public class InventoryFragment extends Fragment{
 
             }
         });
-*/
+
         return view;
     }
 }

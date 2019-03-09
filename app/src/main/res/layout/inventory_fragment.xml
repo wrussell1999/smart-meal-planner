@@ -8,13 +8,21 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:id="@+id/layout">
 
+
+    <ListView
+        android:id="@+id/inventory_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         style="@style/Widget.MaterialComponents.FloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_add_white_24dp"
+        android:src="@drawable/add_white"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_margin="@dimen/fab_margin"/>
+        android:layout_margin="@dimen/fab_margin" />
 </RelativeLayout>

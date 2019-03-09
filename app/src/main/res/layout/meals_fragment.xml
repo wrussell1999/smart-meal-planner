@@ -16,7 +16,6 @@
         android:minHeight="100dp"
         android:padding="16dp"
         android:paddingTop="16dp"
-        app:cardBackgroundColor="@color/textboxBackground"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp">
         <TextView
